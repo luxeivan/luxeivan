@@ -2,10 +2,82 @@ html, body{
   margin: 0;
   padding: 0;
   font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 body{
-  background-color: #FF00AA
+  
 }
 .title{
   color: #007A1F;
+  text-align: center;
+  text-transform: uppercase;
+}
+.wrapper{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  min-width: 25rem;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  background-color: #160030;
+  color: #fff;
+  height: 3rem;
+  align-items: center;
+}
+.logo{
+  margin-left: 2rem;
+}
+.tel{
+  margin-right: 2rem;
+}
+.main{
+  display: flex;
+  flex: 1;
+}
+.left-area{
+  width: 20%;
+  background-color: #D3D3D3;
+}
+.menu__item{
+  list-style: none;
+  margin-bottom: 0.5rem
+}
+.menu__link{
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.menu__link:hover{
+  text-shadow: 1px 1px 5px #160030;
+}
+.content{
+  width: 80%;
+}
+
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3rem;
+  background-color: #160030;
+  color: #fff;
+}
+@media (max-width: 800px) {
+  .main{
+    flex-direction: column;
+  }
+  .menu{
+    display: flex;
+    justify-content: space-around;
+  }
+  .left-area{
+    width: 100%;
+  }
+  .content{
+    width: 100%;
+  }
+  html, body{
+    font-size: 10px;
+  }
 }
